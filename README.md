@@ -1,12 +1,14 @@
-# whatwg - HTML Living Standard
+# HTML 명세서 whatwg - HTML Living Standard
 - https://html.spec.whatwg.org/
 
-# DOM 명세서
+# 문서 객체 모델 DOM 명세서
 - https://dom.spec.whatwg.org/
 
 # CSSOM 명세서
 -  https://www.w3.org/TR/cssom-1/
 
+# 브라우저 객체 모델(BOM)
+- BOM은 HTML 명세서의 일부
 
 - 웹표준 준수 
     - https://www.w3.org/TR/html5/
