@@ -43,9 +43,10 @@ maximun-scale : 최대확대비율
 minimum-scale=1.0 : 최소축소비율
 user-scalable : 사용자에 의한 화면 확대 기능 여부(yes/no)
 
+참고) IOS 10 부터는 use-scalble=no 속성 적용되지 않음. 
+
 ```
 
-IOS 10 부터는 use-scalble=no 속성 적용되지 않음. 
 
 3. 웹페이지가 브라우징된 후, 주소창 사라지게 
 
