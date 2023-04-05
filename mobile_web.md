@@ -129,7 +129,11 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 
 ```
 
-10. mobile reset css
+10. mobile reset css 
+
+
+- 버전 1
+
 
 ```
 /* reset */
@@ -153,5 +157,132 @@ a:active, a:hover {text-decoration:none}
 address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 
 ```
+
+버전 2
+
+```
+
+/* Reset */
+html,body,h1,h2,h3,h4,h5,h6,div,p,blockquote,pre,code,address,ul,ol,li,menu,nav,section,article,aside,
+dl,dt,dd,table,thead,tbody,tfoot,label,caption,th,td,form,fieldset,legend,hr,input,button,textarea,object,figure,figcaption {margin:0;padding:0;}
+
+html,body{width:100%;}
+/* -webkit : 크롬, ios기반의 브라우저 */
+html{
+  -webkit-touch-callout:none; // 비표준 , 브라우저에서 지원하지않음. 
+  -webkit-user-select:none;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);}
+
+
+/*
+
+user-select 사용자가 텍스트를 선택할 수 있는지 지정
+
+/* 키워드 값 */
+user-select: none;
+user-select: auto;
+user-select: text;
+user-select: contain;
+user-select: all;
+
+/* 전역 값 */
+user-select: inherit;
+user-select: initial;
+user-select: unset;
+
+
+*/
+
+/*
+
+-webkit-tap-highlight-color는 링크를 탭할 때 나타나는 강조를 설정하는 비표준 CSS 속성입니다.
+강조는 사용자가 탭이 성공적으로 인식되고 있는지를 나타내며, 어떤 요소를 탭하고 있는지를 나타냅니다.
+
+a {
+    color: inherit;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, .1)
+}
+
+*/
+
+
+/* 가로사이즈가 ios(iphone3 , gallaxy1은 가로가 320) | -webkit-text-size-adjust: 아이폰 가로/세로변경시 글씨 사이즈 제어*/
+body{
+  width:100%; 
+  background:#fff; 
+  min-width:320px; 
+  -webkit-text-size-adjust:none;
+  word-wrap:break-word;
+  word-break:break-all;}
+/* 웹용 */
+body,input,select,textarea,button {border:none;font-size:12px;font-family: 'Noto Sans KR', sans-serif; color: #727272;}
+/* 모바일 : 아이폰은 애플고딕, 안드로이드는 따로 폰트로 된다. */
+body,input,select,textarea,button {border:none;font-size:12px; color: #727272;} 
+ul,ol,li{list-style:none;}
+table{width:100%;border-spacing:0;border-collapse:collapse;}
+img,fieldset{border:0;}
+address,cite,code,em{font-style:normal;font-weight:normal;}
+label,img,input,select,textarea,button{vertical-align: middle;}
+.hide,caption,legend{line-height:0;font-size:1px;overflow:hidden;}
+hr{display:none;}
+/* html5에서는 inline요소다 이것을 block으로 바꿔줌 */
+main,header,section,nav,footer,aside,article,figure{display:block;}
+a{color:#000; text-decoration:none;}
+
+
+/* Form */
+textarea {border:1px solid #dbdbdb;}
+select { height:32px; font-size: 13px; color:#373737; border:1px solid #e9e9e9; background:#fff; border-radius:5px; }
+input[type=tel],
+input[type=time],
+input[type=text],
+input[type=password],
+input[type=search],
+input[type=email],
+input[type=file],
+input[type=url],
+input[type=number],
+input[type=date],textarea {
+  width:100%; 
+  height:30px; 
+  font-size:13px; 
+  color:#373737; 
+  border:1px solid #e9e9e9; 
+  background:#fff; 
+  text-indent:20px; 
+  border-radius:5px;
+  transition:all 0.5s; 
+  vertical-align:middle;}
+
+/* placeholder는 직접 선택할 수 없어서 세팅해줌 */
+input::-webkit-input-placeholder{ color:#b5b5b5; font-size:12px; line-height:100%;}
+textarea{padding:5px 0;}
+select:focus,
+textarea:focus,
+input:focus { border: 1px solid #727272; }
+
+/* search 경우 클릭할때 둥글게 나오는 경우 있음 사각형으로 만듬input[type=password][disabled], */
+input[type=tel][readonly],
+input[type=text][readonly],
+input[type=password][readonly],
+input[type=search][readonly],
+input[type=email][readonly],
+input[type=tel][disabled],
+input[type=text][disabled],
+input[type=password][disabled],
+input[type=search][disabled],
+input[type=email][disabled] { 
+  background:#eaeaea; border-color:#c0c0c0; color:#666; -webkit-appearance:none; font-size:12px;}
+  
+textarea[readonly],
+textarea[disabled]{padding:11px; font-size:16px; color:#666; font-weight:normal; line-height:140%; height:78px; background:#eaeaea; border:1px solid #c0c0c0;}
+.clear{clear:both;}
+.clear:after {content:""; display:block; clear:both;}
+
+```
+
+
+11. css inherit, initial 차이 
 
 
