@@ -299,4 +299,5 @@ tablet: '768px' // @media (min-width: 768px)
 
 ```
 
+12. iPhone X, iPhone 11의 안전영역(Safe area) 
 
