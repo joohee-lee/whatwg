@@ -282,7 +282,21 @@ textarea[disabled]{padding:11px; font-size:16px; color:#666; font-weight:normal;
 
 ```
 
+11. 반응형 웹일 경우,  다행상도 대응 참고
+```
+'sm': '640px' // @media (min-width: 640px)
+'md': '768px' // @media (min-width: 768px)
+'lg': '1024px' // @media (min-width: 1024px)
+'xl': '1280px' // @media (min-width: 1280px)
+'2xl': '1536px' // @media (min-width: 1536px)
 
-11. css inherit, initial 차이 
+mobile: '360px' // @media (min-width: 360px)
+foldable: '523px' // @media (min-width: 523px)
+tablet: '768px' // @media (min-width: 768px)
+'under-foldable': { max: '522px' } // @media (max-width: 522px)
+'under-tablet': { max: '767px' } // @media (max-width: 767px)
+'under-mobile': { max: '359px' } // @media (max-width: 359px)
+
+```
 
 
